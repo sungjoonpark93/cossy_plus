@@ -100,9 +100,54 @@ if __name__ =='__main__':
     # make_cossy_input(preprocessed_filename)
 
 
+    #mut with exp(reverse False)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_reactome.csv"
+    make_cossy_input(preprocessed_filename)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_string.csv"
+    make_cossy_input(preprocessed_filename)
+
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_alpha0.7_reactome.csv"
+    make_cossy_input(preprocessed_filename)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_alpha0.7_string.csv"
+    make_cossy_input(preprocessed_filename)
+
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_alpha0.7_reactome.csv"
+    make_cossy_input(preprocessed_filename)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_alpha0.7_string.csv"
+    make_cossy_input(preprocessed_filename)
+
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_alpha0.7_reactome.csv"
+    make_cossy_input(preprocessed_filename)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_alpha0.7_string.csv"
+    make_cossy_input(preprocessed_filename)
+
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_alpha0.7_reactome.csv"
+    make_cossy_input(preprocessed_filename)
+    preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_alpha0.7_string.csv"
+    make_cossy_input(preprocessed_filename)
+
     #mut with exp(reverse True)
     # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
     # make_cossy_input(preprocessed_filename)
     # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
     # make_cossy_input(preprocessed_filename)
-
+    #
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    # make_cossy_input(preprocessed_filename)
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    # make_cossy_input(preprocessed_filename)
+    #
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    # make_cossy_input(preprocessed_filename)
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    # make_cossy_input(preprocessed_filename)
+    #
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    # make_cossy_input(preprocessed_filename)
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    # make_cossy_input(preprocessed_filename)
+    #
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    # make_cossy_input(preprocessed_filename)
+    # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    # make_cossy_input(preprocessed_filename)

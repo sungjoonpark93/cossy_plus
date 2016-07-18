@@ -1,5 +1,6 @@
 __author__ = 'SungJoonPark'
 import pandas as pd
+import numpy as np
 
 #Before making gct file, need to order column as tumor sample and normal sample order, alo return dividing index.
 def order_sample(df):
@@ -11,6 +12,21 @@ def order_sample(df):
     tumor_normal_divide_index = len(tumor_sample_list)
     return ordered_df,tumor_normal_divide_index
 
+
+def get_normal_sample_list(preprocessed_df):
+    normal_sample_list = [sample for sample in preprocessed_df.columns if int(sample[13:15]) >= 10]
+    return normal_sample_list
+
+
+def replace_normal_sample(preprocessed_df,normal_sample_list):
+    '''
+    replace the normal sample column of preprocessed_df with normal_sample_list having value 0
+    '''
+    preprocessed_df = preprocessed_df.drop(get_normal_sample_list(preprocessed_df),axis=1)
+    data=np.zeros((len(preprocessed_df.index),len(normal_sample_list)))
+    normal_sample_df = pd.DataFrame(data, index=preprocessed_df.index, columns =normal_sample_list)
+    preprocessed_df = pd.concat([preprocessed_df,normal_sample_df],axis=1)
+    return preprocessed_df
 
 
 def match_gene(mut_preprocessed_df=None,network_df=None, is_exp = False, exp_preprocessed_df = None):
@@ -30,11 +46,21 @@ def match_gene(mut_preprocessed_df=None,network_df=None, is_exp = False, exp_pre
         return mut_preprocessed_df.loc[common_gene_list,:],network_df.loc[common_gene_list,common_gene_list],exp_preprocessed_df.loc[common_gene_list,:]
 
 
-def match_sample(mut_preprocessed_df=None,exp_preprocessed_df=None):
-    #match the sample between mut_preprocessed_df, and exp_preprocessed_df, and make the order of sample same for each df.
+def match_sample(mut_preprocessed_df=None,exp_preprocessed_df=None, conserve_exp_normal_sample=False):
+    '''
+    :param mut_preprocessed_df:
+    :param exp_preprocessed_df:
+    :param conserve_exp_normal_sample: True if you want to conserve the normal sample of exp data.
+    :return:
+    '''
 
+    #match the sample between mut_preprocessed_df, and exp_preprocessed_df, and make the order of sample same for each df.
     #make dict that key is sample and value is one sample barcode having the sample id.
     #there could be multiple sample barcode mapped into one sample id, we just asign one barcode to the sample id
+
+    if conserve_exp_normal_sample ==True:
+        mut_preprocessed_df = replace_normal_sample(mut_preprocessed_df,get_normal_sample_list(exp_preprocessed_df))
+
     mut_sample_barcode_dict = {}
     for barcode in mut_preprocessed_df.columns.tolist():
         sample = barcode[0:16]
@@ -60,3 +86,5 @@ def match_sample(mut_preprocessed_df=None,exp_preprocessed_df=None):
     sample_matched_exp_preprocessed_df,_ = order_sample(sample_matched_exp_preprocessed_df)
 
     return sample_matched_mut_preprocessed_df,sample_matched_exp_preprocessed_df
+
+
