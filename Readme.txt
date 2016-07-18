@@ -11,3 +11,8 @@ preprocess/cossy.py
 preprocessed file is gene x patient matrix file.
 
 each module's example code is in each py file.
+
+
+location that absolute path is used
+preprocess/icgc.py 42 line
+preprocess/cossy.py 27, 27 line
