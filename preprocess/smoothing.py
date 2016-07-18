@@ -89,6 +89,7 @@ def network_smoothing_with_exp(mut_preprocessed_filename=None,exp_preprocessed_f
 
 
 if __name__ == '__main__':
+    pass
      #---mut with smoothing(reverse Fasle)---#
     # reactome_filename = "Q:/COSSY+/data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
     # string_filename = "Q:/COSSY+/data/network/string/string_fix_excel_problem_tab_seperator.sif"
@@ -100,12 +101,12 @@ if __name__ == '__main__':
     # network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
 
      #---mut with smoothing(reverse True)---#
-    reactome_filename = "Q:/COSSY+/data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
-    string_filename = "Q:/COSSY+/data/network/string/string_fix_excel_problem_tab_seperator.sif"
-    mut_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
-    exp_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
-    output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-    network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
-    output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-    network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
+    # reactome_filename = "Q:/COSSY+/data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
+    # string_filename = "Q:/COSSY+/data/network/string/string_fix_excel_problem_tab_seperator.sif"
+    # mut_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
+    # exp_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
+    # output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    # network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
+    # output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    # network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
 

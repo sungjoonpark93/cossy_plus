@@ -85,6 +85,7 @@ def make_cossy_input(preproceed_filename,kid_type='kegg'):
     print('end making kidfile..\n')
 
 if __name__ =='__main__':
+    pass
     #exp
     # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_array.BRCA-US.tsv_preprocessed.csv"
     # make_cossy_input(preprocessed_filename)
@@ -105,4 +106,3 @@ if __name__ =='__main__':
     # preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
     # make_cossy_input(preprocessed_filename)
 
-    pass
