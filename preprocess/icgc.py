@@ -39,7 +39,7 @@ def preprocess_mut(input_filename=None,output_filename=None, score_type='binary'
 
     df = pd.read_csv(input_filename,sep='\t',low_memory=False)
     #there is no gene symbol in ICGC mutation file, only Ensemble ID, so wee need to make gene symbol from EnsembleID
-    mapping_file = "../../data/mapping_file/HGNC_ApprovedSymbol_EnsembleID.txt"
+    mapping_file = "Q:/COSSY+/data/mapping_file/HGNC_ApprovedSymbol_EnsembleID.txt"
     map_df = pd.read_csv(mapping_file,sep='\t')
     map_dict = map_df.set_index('Ensembl ID(supplied by Ensembl)')['Approved Symbol'].to_dict()
     #filter the ensemble id into the one in the mapping file.
@@ -77,50 +77,15 @@ def preprocess_mut(input_filename=None,output_filename=None, score_type='binary'
 if __name__ == '__main__':
     pass
     #---exp---#
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Breast Cancer/exp_array.BRCA-US.tsv/exp_array.BRCA-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_array.BRCA-US.tsv_preprocessed.csv"
+    # input_filename = "Q:/COSSY+/data/raw_data/TCGA/ICGC/release21/Breast Cancer/exp_array.BRCA-US.tsv/exp_array.BRCA-US.tsv"
+    # output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_array.BRCA-US.tsv_preprocessed.csv"
     # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='array')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Breast Cancer/exp_seq.BRCA-US.tsv/exp_seq.BRCA-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp_seq.BRCA-US.tsv_preprocessed.csv"
-    # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='seq')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Colon Adenocarcinoma/exp_seq.COAD-US.tsv/exp_seq.COAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/exp/exp_seq.COAD-US.tsv_preprocessed.csv"
-    # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='seq')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Gastric Adenocarcinoma/exp_seq.STAD-US.tsv/exp_seq.STAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/exp/exp_seq.STAD-US.tsv_preprocessed.csv"
-    # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='seq')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/exp_seq.LUSC-US.tsv/exp_seq.LUSC-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/exp/exp_seq.LUSC-US.tsv_preprocessed.csv"
-    # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='seq')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Prostate Adenocarcinoma/exp_seq.PRAD-US.tsv/exp_seq.PRAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/exp/exp_seq.PRAD-US.tsv_preprocessed.csv"
-    # preprocess_exp(input_filename=input_filename, output_filename=output_filename,exp_type='seq')
 
 
      #---mut---#
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Breast Cancer/simple_somatic_mutation.open.BRCA-US.tsv/simple_somatic_mutation.open.BRCA-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_preprocessed.csv"
+    # input_filename = "Q:/COSSY+/data/raw_data/TCGA/ICGC/release21/Breast Cancer/simple_somatic_mutation.open.BRCA-US.tsv/simple_somatic_mutation.open.BRCA-US.tsv"
+    # output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_preprocessed.csv"
     # preprocess_mut(input_filename=input_filename, output_filename=output_filename,score_type='binary')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Colon Adenocarcinoma/simple_somatic_mutation.open.COAD-US.tsv/simple_somatic_mutation.open.COAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut/simple_somatic_mutation.open.COAD-US.tsv_preprocessed.csv"
-    # preprocess_mut(input_filename=input_filename, output_filename=output_filename,score_type='binary')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Gastric Adenocarcinoma/simple_somatic_mutation.open.STAD-US.tsv/simple_somatic_mutation.open.STAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut/simple_somatic_mutation.open.STAD-US.tsv_preprocessed.csv"
-    # preprocess_mut(input_filename=input_filename, output_filename=output_filename,score_type='binary')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/simple_somatic_mutation.open.LUSC-US.tsv/simple_somatic_mutation.open.LUSC-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut/simple_somatic_mutation.open.LUSC-US.tsv_preprocessed.csv"
-    # preprocess_mut(input_filename=input_filename, output_filename=output_filename,score_type='binary')
-    #
-    # input_filename = "../../data/raw_data/TCGA/ICGC/release21/Prostate Adenocarcinoma/simple_somatic_mutation.open.PRAD-US.tsv/simple_somatic_mutation.open.PRAD-US.tsv"
-    # output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut/simple_somatic_mutation.open.PRAD-US.tsv_preprocessed.csv"
-    # preprocess_mut(input_filename=input_filename, output_filename=output_filename,score_type='binary')
+
 
 

@@ -88,82 +88,24 @@ def network_smoothing_with_exp(mut_preprocessed_filename=None,exp_preprocessed_f
 
 
 
+if __name__ == '__main__':
+     #---mut with smoothing(reverse Fasle)---#
+    # reactome_filename = "Q:/COSSY+/data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
+    # string_filename = "Q:/COSSY+/data/network/string/string_fix_excel_problem_tab_seperator.sif"
+    # mut_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
+    # exp_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
+    # output_filename ="Q:/COSSY+/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_string.csv"
+    # network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
+    # output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_reactome.csv"
+    # network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
 
- #---mut with smoothing(reverse Fasle)---#
-# reactome_filename = "../../data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
-# string_filename = "../../data/network/string/string_fix_excel_problem_tab_seperator.sif"
-# mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
-# exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_string.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_alpha0.7_reactome.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
-#
-# mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut/simple_somatic_mutation.open.COAD-US.tsv_smoothing_string_preprocessed.csv"
-# exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/exp/exp_seq.COAD-US.tsv_preprocessed.csv"
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_alpha0.7_string.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_alpha0.7_reactome.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
-#
-# mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut/simple_somatic_mutation.open.STAD-US.tsv_smoothing_string_preprocessed.csv"
-# exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/exp/exp_seq.STAD-US.tsv_preprocessed.csv"
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_alpha0.7_string.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_alpha0.7_reactome.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
-#
-# mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut/simple_somatic_mutation.open.LUSC-US.tsv_smoothing_string_preprocessed.csv"
-# exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/exp/exp_seq.LUSC-US.tsv_preprocessed.csv"
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_alpha0.7_string.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_alpha0.7_reactome.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
-#
-#
-# mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut/simple_somatic_mutation.open.PRAD-US.tsv_smoothing_string_preprocessed.csv"
-# exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/exp/exp_seq.PRAD-US.tsv_preprocessed.csv"
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_alpha0.7_string.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename)
-# output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_alpha0.7_reactome.csv"
-# network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename)
+     #---mut with smoothing(reverse True)---#
+    reactome_filename = "Q:/COSSY+/data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
+    string_filename = "Q:/COSSY+/data/network/string/string_fix_excel_problem_tab_seperator.sif"
+    mut_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
+    exp_preprocessed_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
+    output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
+    network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
+    output_filename ="Q:/COSSY+/data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
+    network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
 
-
- #---mut with smoothing(reverse True)---#
-reactome_filename = "../../data/network/reactome/PathwayCommons.8.reactome.BINARY_SIF_DRUG_deleted.hgnc.txt.sif"
-string_filename = "../../data/network/string/string_fix_excel_problem_tab_seperator.sif"
-mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut/simple_somatic_mutation.open.BRCA-US.tsv_smoothing_string_preprocessed.csv"
-exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/exp/exp_seq.BRCA-US.tsv_preprocessed.csv"
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Breast Cancer/mut_with_exp/BRCA_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
-
-mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut/simple_somatic_mutation.open.COAD-US.tsv_smoothing_string_preprocessed.csv"
-exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/exp/exp_seq.COAD-US.tsv_preprocessed.csv"
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Colon Adenocarcinoma/mut_with_exp/COAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
-
-mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut/simple_somatic_mutation.open.STAD-US.tsv_smoothing_string_preprocessed.csv"
-exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/exp/exp_seq.STAD-US.tsv_preprocessed.csv"
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Gastric Adenocarcinoma/mut_with_exp/STAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
-
-mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut/simple_somatic_mutation.open.LUSC-US.tsv_smoothing_string_preprocessed.csv"
-exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/exp/exp_seq.LUSC-US.tsv_preprocessed.csv"
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename,reverse=True)
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Lung Squamous Cell Carcinoma/mut_with_exp/LUSC_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
-
-
-mut_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut/simple_somatic_mutation.open.PRAD-US.tsv_smoothing_string_preprocessed.csv"
-exp_preprocessed_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/exp/exp_seq.PRAD-US.tsv_preprocessed.csv"
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_reversed_alpha0.7_string.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=string_filename, reverse=True)
-output_filename ="../../data/preprocessed/TCGA/ICGC/release21/Prostate Adenocarcinoma/mut_with_exp/PRAD_mut_with_exp_seq_reversed_alpha0.7_reactome.csv"
-network_smoothing_with_exp(mut_preprocessed_filename=mut_preprocessed_filename,exp_preprocessed_filename=exp_preprocessed_filename,output_filenmae=output_filename,network_file=reactome_filename,reverse=True)
